@@ -1,0 +1,31 @@
+/* ESTILOS HEADER */
+div header {
+  padding: 0rem;
+  margin: 0rem;
+  position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(31, 92, 28);
+  z-index: 1000;
+}
+
+#title {
+  font-size: 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: black;
+  justify-content: left;
+  margin-left: 2rem;
+}
+
+header nav ul li a:hover {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  color: #801212;
+}
+
+
+ /*ESTILOS HEADER */
+
+ 
+
