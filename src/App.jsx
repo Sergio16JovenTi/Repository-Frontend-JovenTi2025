@@ -1,26 +1,34 @@
 import { useState } from 'react'
 import './App.css'
-import { Juegos } from './components/juegos.jsx'
+import GameList from './components/GameList.jsx'
+import GameForm from './components/GameForm.jsx'
 
 
 
 function App() {
   return (
 <div> 
-    <header>
+    <header className='site-header'>
       <h1 id='title'>OUR WORK</h1>
       <div> 
         <nav>
-        <ul>
-          <li><a href="#tarjetas">TARJETAS</a></li>
-          <li><a href="#juegos"> JUEGOS </a></li>
-          <li><a href="#form">FORM</a></li>
+        <ul className='nav-items'>
+          <li><a href="" className='nav-link'>TARJETAS</a></li>
+          <li><a href="#juegos" className='nav-link'> JUEGOS </a></li>
+          <li><a href="#form" className='nav-link'>FORM</a></li>
         </ul>
         </nav>
       </div>
     </header>
+<div/>
+
     <main>
-      <Juegos />
+    <GameList />
+    <GameForm />
+    <Formulario />
+    
+
+
 
       
     </main>
@@ -29,6 +37,31 @@ function App() {
     </footer>
 </div>
   )
+}
+
+function Game () {
+  const [selectedGame, setSelectedGame] = useState(null);
+  const [refreshKey, setRefreshKey] = useState(0);
+
+  const handleEdit = (game) => {
+    setSelectedGame(game);
+    window.scrollTo({ top: 0, behavior: "smooth" }); // sube al formulario
+  };
+
+  const handleSave = () => {
+    setSelectedGame(null);
+    setRefreshKey((prev) => prev + 1); // fuerza que GameList recargue
+  };
+
+  return (
+    <div className="app-container">
+      <h1 className="main-title">🎮 Mi Biblioteca de Videojuegos</h1>
+
+      <GameForm selectedGame={selectedGame} onSave={handleSave} />
+
+      <GameList key={refreshKey} onEdit={handleEdit} />
+    </div>
+  );
 }
 
 function Formulario() {
@@ -58,5 +91,7 @@ function Formulario() {
   )
 }
 
-
 export default App
+
+
+
