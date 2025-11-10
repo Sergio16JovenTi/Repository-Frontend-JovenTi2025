@@ -5,24 +5,29 @@ body {
 }
 
 .site-header {
-  display: flex;
-  margin: 0rem;
-  padding: 0rem;
-  position: sticky;
-  box-sizing: border-box;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #5e1508;
-  list-style: none;
-  z-index: 1000;
+    display: flex;
+    margin: 0rem;
+    padding: 0rem;
+    position: sticky;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(45deg, #201210, #580909e2, #082280);
+    background-size: 400% 400%;
+    animation: hero-gradient-animation 15s ease infinite;
+    list-style: none;
+    z-index: 1000;
 }
 
 #title {
   font-size: 35px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 400;
+  font-style: normal;
   color: #190707;
   justify-content: flex-start;
   margin-left: 2rem;
+  background-color: #e6d6d3;
 }
 
 .nav-items {
@@ -35,7 +40,7 @@ body {
 
 
 .nav-link {
-  font-size: 25px;
+  font-size: 18px;
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: rgb(227, 223, 223);
   text-decoration: none;
@@ -47,6 +52,8 @@ body {
   font-family: 'Times New Roman', Times, serif;
   font-size: 24px;
   color: #0429a1;
+  border-bottom: 2px solid #0429a1;
+  transition: all 0.3s ease-in-out;
 }
 
 

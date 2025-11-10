@@ -36,7 +36,7 @@
 .game-form input:focus,
 .game-form textarea:focus {
   border-color: var(--color-accent);
-  outline: none;
+  outline: #c62828 solid 2px;
 }
 
 textarea {
