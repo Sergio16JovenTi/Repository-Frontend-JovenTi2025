@@ -24,10 +24,9 @@ body {
   font-family: "Momo Trust Display", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #190707;
+  color: #f5eded;
   justify-content: flex-start;
-  margin-left: 2rem;
-  background-color: #e6d6d3;
+  margin-left: 0;
 }
 
 .nav-items {
@@ -41,7 +40,7 @@ body {
 
 .nav-link {
   font-size: 18px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: "Momo Trust Display", sans-serif;
   color: rgb(227, 223, 223);
   text-decoration: none;
   justify-content: space-between;
@@ -49,16 +48,41 @@ body {
 }
 
 .nav-link:hover {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Momo Trust Display", sans-serif;
   font-size: 24px;
   color: #0429a1;
   border-bottom: 2px solid #0429a1;
   transition: all 0.3s ease-in-out;
 }
+/* ESTILOS LOGO */
+img {
+    width: 70px;
+    height: 80px;
+  }
 
+.logo {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 2rem;
 
+}
+/* ESTILOS LOGO */
 
  /*ESTILOS HEADER */
+
+
+                             /* ESTILOS MAIN */
+.pmayor {
+  font-size: 24px;
+  font-family: "Momo Trust Display", sans-serif;
+  font-weight: 1000;
+  font-style: normal;
+  color: #030202;
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px rgba(133, 24, 24, 0.5);
+  justify-content: center;
+  margin: 2rem 25%;
+}
 
  
 

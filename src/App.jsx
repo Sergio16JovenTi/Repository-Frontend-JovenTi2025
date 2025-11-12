@@ -1,27 +1,39 @@
 import { useState } from 'react'
 import './App.css'
+import Game from "./components/Game.jsx"
+import logo from "./components/Images/logo.jpg"
+import GameList from './components/GameList.jsx'
 
 
-
-
-function App() {
+function App () {
   return (
-<div> 
+<div>
     <header className='site-header'>
-      <h1 id='title'>TheProject'S</h1>
-      <img id='Logo' src='./components/Images/logo.png' alt='Logo'/>
+      <div className='logo'>
+        <h1 id='title'>TheProject'S</h1>
+        <img src={logo} alt="" />
+
+      </div>
+    
       <div> 
         <nav>
         <ul className='nav-items'>
-          <li><a href="GameList.jsx" className='nav-link'>GAMES</a></li>
-          <li><a href="" className='nav-link'> JUEGOS </a></li>
+          <li><a href="Game.jsx" className='nav-link'>JUEGOS</a></li>
+          <li><a href="" className='nav-link'> LISTA </a></li>
           <li><a href="" className='nav-link'>FORM</a></li>
         </ul>
         </nav>
       </div>
     </header>
     <main>
+
+      <div> <strong className="pmayor"> ¡BIENVENIDOS AL MEJOR SITIO DE DIVERSION!</strong>
+      <Game />
     
+        
+        
+
+      </div>
     </main>
     <footer>
 
@@ -30,7 +42,7 @@ function App() {
   )
 }
 
-function Formulario() {
+/* function Formulario() {
   const [nombre, setNombre] = useState("");
   const [email, setEmail] = useState("");
   const [mensaje, setMensaje] = useState("");
@@ -56,7 +68,7 @@ function Formulario() {
     </section>
   )
 }
-
+ */
 export default App
 
 
