@@ -6,6 +6,9 @@ import GameList from './components/GameList.jsx'
 
 
 function App () {
+  const [Game, setGame] = useState(null);
+  
+
   return (
 <div>
     <header className='site-header'>
@@ -29,6 +32,7 @@ function App () {
 
       <div> <strong className="pmayor"> ¡BIENVENIDOS AL MEJOR SITIO DE DIVERSION!</strong>
       <Game />
+      <GameList />
     
         
         
